@@ -1,0 +1,41 @@
+{% extends "admin/base.html" %}
+{% block extrastyle %}
+{{block.super}}
+<style>
+/* TUS ESTILOS PERSONALIZADOS ACA */
+#branding h1 a:visited, #branding h1 a:link{
+color:darkblue !important;
+}
+#header {
+background: #e8c4e2;
+}
+
+body {
+background-image: url("https://miro.medium.com/max/10944/1*tE7hwxGcg3hg35EXUk3W0g.jpeg") !important;
+background-repeat: no-repeat !important;
+background-size: cover !important;
+}
+h1{
+color:red !important;
+
+}
+#content-related{
+margin-right: -1250px;
+}
+#content h1{
+text-align: center;
+font-size: 30px;
+}
+#content-main{
+opacity: 0.95;
+}
+.module caption, .inline-group h2{
+text-align:center;
+}
+
+#content-related .module h2 {
+text-align:center;
+
+}
+</style>
+{% endblock %}
